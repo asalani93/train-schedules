@@ -1,0 +1,20 @@
+{
+  "name": "mbta-assignment",
+  "version": "1.0.0",
+  "description": "Shows train times",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "co-request": "^1.0.0",
+    "consolidate": "^0.14.1",
+    "csv-parse": "^1.1.0",
+    "express": "^4.13.4",
+    "swig": "^1.4.2"
+  }
+}

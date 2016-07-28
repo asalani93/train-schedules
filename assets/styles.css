@@ -1,0 +1,24 @@
+body {
+  background-color: #F8F8F8;
+}
+
+.container {
+  background-color: #FFF;
+  border-left: 1px solid #DDD;
+  border-right: 1px solid #DDD;
+  min-height: 100vh;
+}
+
+.gray {
+  color: #888;
+}
+
+.status-green {
+  color: #090;
+  font-weight: bold;
+}
+
+.status-red {
+  color: #900;
+  font-weight: bold;
+}

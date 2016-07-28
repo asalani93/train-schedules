@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/assets/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/styles.css" />
+  <script src="/assets/jquery-2.2.4.min.js"></script>
+  <script src="/assets/handlebars-v4.0.5.js"></script>
+  <script src="/assets/board.js"></script>
+  <title>MBTA Train Schedule</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Application title -->
+    <div class="row">
+      <h1 class="text-center">MBTA Train Schedule</h1>
+    </div>
+
+    <!-- Refresh status -->
+    <div class="row">
+      <div class="col-xs-12 text-right">
+        <button class="btn btn-default" id="mbta-refresh" type="button">Reload</button><br>
+        <em id="mbta-update-time" class="small gray">Last updated never</em>
+      </div>
+    </div>
+
+    <!-- Time board -->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Origin</th>
+          <th>Trip</th>
+          <th>Destination</th>
+          <th>Scheduled Time</th>
+          <th>Lateness</th>
+          <th>Track</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="mbta-board">
+        <tr>
+          <td class="text-center" colspan="8">Loading...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script id="row-template" type="text/x-handlebars-template">
+    <tr class="{{StatusClass}}">
+      <td>{{Origin}}</td>
+      <td>{{Trip}}</td>
+      <td>{{Destination}}</td>
+      <td>{{ScheduledTime}}</td>
+      <td>{{Lateness}}</td>
+      <td>{{Track}}</td>
+      <td>{{Status}}</td>
+    </tr>
+  </script>
+</body>
+
+</html>
