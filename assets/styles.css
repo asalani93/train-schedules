@@ -1,6 +1,22 @@
+/*
+  ./assets/styles.css
+  All of the custom CSS for the app
+  This project is a bit light on custom styling because this was done in a day
+    for an interview, and I more or less relied on Bootstrap
+  So, in the future if this is ever updated, all styles go here
+*/
+
+/*
+  Because this looks nice :D
+*/
+
 body {
   background-color: #F8F8F8;
 }
+
+/*
+  The app's container, designed to fit the whole page
+*/
 
 .container {
   background-color: #FFF;
@@ -9,9 +25,18 @@ body {
   min-height: 100vh;
 }
 
+/*
+  Just the color gray
+  Used to style the "Last updated" label above the listings
+*/
+
 .gray {
   color: #888;
 }
+
+/*
+  Decorates individual trains listings depending on their status
+*/
 
 .status-green {
   color: #090;
